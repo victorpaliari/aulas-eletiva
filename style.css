@@ -89,6 +89,10 @@ body {
     
 }
 
+.conteudo-principal-escrito-botao:hover {
+    background-color: #e1f52f;
+}
+
 .conteudo-principal-imagem {
     height: 430px;
 }

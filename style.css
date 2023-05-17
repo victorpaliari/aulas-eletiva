@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
 
 * {
     margin: 0;
@@ -9,6 +10,9 @@
 
 body {
     font-size: 100%;
+    position: relative;
+    width: 1920px;
+    height: 1100px;
     background: linear-gradient(68.15deg, #5E99CE 16.62%, #291DB4 85.61%);
 }
 
@@ -23,6 +27,7 @@ body {
 
 .cabecalho-imagem {
     height: 60px;
+
 }
 
 .cabecalho-menu {
@@ -72,7 +77,7 @@ body {
 
 .conteudo-principal-escrito-botao {
     background-color: #ECD6C4;
-    width: 200px;
+    width: 250px;
     height: 80px;
     border: none;
     box-shadow: 4px 5px 4px 0px #00000040;
@@ -83,3 +88,33 @@ body {
     color: #000000;
     
 }
+
+.conteudo-principal-imagem {
+    height: 430px;
+}
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    border-top: 0.4px solid #FFF2E7;
+    padding-top: 44px;   
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+.conteudo-secundario-paragrafo {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    font-weight: 400px;
+    font-size: 18px;
+    text-align: center;   
+}
+
+.rodape {
+    padding: 14px;
+    border-top: 0.4px solid #FFF2E7;
+}
+    
+    

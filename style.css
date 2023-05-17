@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Sarala&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-boz;
+    box-sizing: border-box;
     text-decoration: none;
 }
 
@@ -13,12 +14,11 @@ body {
 }
 
 .cabecalho {
- display: flex;   
- flex-direction: row;
- align-items: center;
- justify-content: space-around;
- padding: 24px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
 }
 
 .cabecalho-imagem {
@@ -27,7 +27,10 @@ body {
 
 .cabecalho-menu {
     display: flex;
+    flex-wrap: wrap;
     gap: 32px;
+    justify-content: center;
+    margin-top: 16px;
 }
 
 .cabecalho-menu-item {
@@ -43,17 +46,24 @@ body {
 }
 
 .conteudo-principal {
-    display: flex; 
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    text-align: center;
+    padding: 40px;
+    gap: 40px;
+}
+
+.conteudo-principal-imagem {
+    width: 250px;
+    flex-wrap: wrap;
 }
 
 .conteudo-principal-escrito {
     display: flex;
     flex-direction: column;
-    gap: 32px;
-
+    gap: 40px;
 }
 
 .conteudo-principal-escrito-titulo {
@@ -81,5 +91,17 @@ body {
     font-weight: 400;
     font-size: 19px;
     color: #000000;
+    margin-top: 30px;
+}
+
+
+.conteudo-secundario {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    text-align: center;
     
+}
+
+.conteudo-secundario-paragrafo {
+    padding: 10px;
 }

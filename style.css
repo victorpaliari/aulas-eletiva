@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+<<<<<<< HEAD
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Sarala&display=swap');
+=======
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+>>>>>>> c7c8ef00b807499e9b79cf52c6d17160d541ed97
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-boz;
+    box-sizing: border-box;
     text-decoration: none;
 }
 
@@ -17,12 +21,11 @@ body {
 }
 
 .cabecalho {
- display: flex;   
- flex-direction: row;
- align-items: center;
- justify-content: space-around;
- padding: 24px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
 }
 
 .cabecalho-imagem {
@@ -32,7 +35,10 @@ body {
 
 .cabecalho-menu {
     display: flex;
+    flex-wrap: wrap;
     gap: 32px;
+    justify-content: center;
+    margin-top: 16px;
 }
 
 .cabecalho-menu-item {
@@ -48,17 +54,24 @@ body {
 }
 
 .conteudo-principal {
-    display: flex; 
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    text-align: center;
+    padding: 40px;
+    gap: 40px;
+}
+
+.conteudo-principal-imagem {
+    width: 250px;
+    flex-wrap: wrap;
 }
 
 .conteudo-principal-escrito {
     display: flex;
     flex-direction: column;
-    gap: 32px;
-
+    gap: 40px;
 }
 
 .conteudo-principal-escrito-titulo {
@@ -86,9 +99,10 @@ body {
     font-weight: 400;
     font-size: 19px;
     color: #000000;
-    
+    margin-top: 30px;
 }
 
+<<<<<<< HEAD
 .conteudo-principal-escrito-botao:hover {
     background-color: #e1f52f;
 }
@@ -96,29 +110,16 @@ body {
 .conteudo-principal-imagem {
     height: 430px;
 }
+=======
+>>>>>>> 733f0d2ed5d9acb50e697f8fe808f0aad938f425
 
 .conteudo-secundario {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    align-items: center;
-    border-top: 0.4px solid #FFF2E7;
-    padding-top: 44px;   
     font-family: 'Roboto Mono', monospace;
     color: white;
+    text-align: center;
+    
 }
 
 .conteudo-secundario-paragrafo {
-    font-family: 'Roboto Mono', monospace;
-    color: white;
-    font-weight: 400px;
-    font-size: 18px;
-    text-align: center;   
+    padding: 10px;
 }
-
-.rodape {
-    padding: 14px;
-    border-top: 0.4px solid #FFF2E7;
-}
-    
-    

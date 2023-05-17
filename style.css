@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Sarala&display=swap');
-=======
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
->>>>>>> c7c8ef00b807499e9b79cf52c6d17160d541ed97
 
 * {
     margin: 0;
@@ -64,8 +60,8 @@ body {
 }
 
 .conteudo-principal-imagem {
-    width: 250px;
-    flex-wrap: wrap;
+    
+    justify-content: end;
 }
 
 .conteudo-principal-escrito {
@@ -102,7 +98,6 @@ body {
     margin-top: 30px;
 }
 
-<<<<<<< HEAD
 .conteudo-principal-escrito-botao:hover {
     background-color: #e1f52f;
 }
@@ -110,8 +105,6 @@ body {
 .conteudo-principal-imagem {
     height: 430px;
 }
-=======
->>>>>>> 733f0d2ed5d9acb50e697f8fe808f0aad938f425
 
 .conteudo-secundario {
     font-family: 'Roboto Mono', monospace;

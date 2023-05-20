@@ -1,9 +1,13 @@
+
+	/* Estilizações CSS */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Sarala&display=swap');
-=======
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
->>>>>>> c7c8ef00b807499e9b79cf52c6d17160d541ed97
+
+@media screen and (max-width: 768px){
+	/* Estilizações CSS */
+
+}
 
 * {
     margin: 0;
@@ -31,6 +35,13 @@ body {
 .cabecalho-imagem {
     height: 60px;
 
+}
+
+.link {
+    font-family: 'Roboto Mono', monospace;
+    color: #FFF2E7;
+    font-weight: 400;
+    font-size: 13px;
 }
 
 .cabecalho-menu {

@@ -4,11 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Sarala&display=swap');
 
-@media screen and (max-width: 768px){
-	/* Estilizações CSS */
-
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -75,8 +70,8 @@ body {
 }
 
 .conteudo-principal-imagem {
-    width: 250px;
-    flex-wrap: wrap;
+    
+    justify-content: end;
 }
 
 .conteudo-principal-escrito {
@@ -113,6 +108,13 @@ body {
     margin-top: 30px;
 }
 
+.conteudo-principal-escrito-botao:hover {
+    background-color: #e1f52f;
+}
+
+.conteudo-principal-imagem {
+    height: 430px;
+}
 
 .conteudo-secundario {
     font-family: 'Roboto Mono', monospace;

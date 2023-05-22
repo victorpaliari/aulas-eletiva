@@ -4,19 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css">
     <title>Meu cadastro</title>
 </head>
 <body>
-    <div>
-        Cadastro da Eletiva
-    <p>Complete as informações abaixo:</p> 
+    <div class="campo">
+    <h1 id="titulo">Cadastro da Eletiva</h1>
+    <p id="subtitulo">Complete as informações abaixo:</p> 
     <br>
     </div>
 
     <form>
-        <fieldset>
-            
+        <fieldset class="grupo">
+            <label class="nome" for="nome"><strong>Nome</strong></label>
+            <input type="text" name="nome" id="nome" required>
+            <label class="sobrenome" for="sobrenome">Sobrenome</label>
+            <input type ="text" nome="sobrenome" id="sobrenome" required>
         </fieldset>
+
+    <div class="campo">
+        <label for="email"> Email Sidarta </label>
+        <input type="email" name="email" id="email" required>
+    </div>
+    
+    <div class="campo-serie">
+        <label>Qual sua série?</label>
+        <label>
+            <input type="radio" name="serie" value="6ano" checked> 6º ANO
+        </label>
+        <label>
+            <input type="radio" name="serie" value="7ano"> 7º ANO
+        </label>
+        <label>
+            <input type="radio" name="serie" value="8ano"> 8º ANO
+        </label>
+        <label>
+            <input type="radio" name="serie" value="9ano"> 9º ANO
+        </label>
+    </div>
+
+    <br>
+
+    <div class="campo">
+        <label for="experiencia">Qual sua experiência com programação?</label>
+        <select id="experiencia">
+            <option selected disabled value="selecione">Selecione</option>
+            <option>Não tenho experiência</option>
+            <option>Tenho pouca experiência</option>
+            <option>Tenho alguma experiência</option>
+            <option>Tenho muita experiência</option>
+        </select>
+    </div>
+    <br>
+    <fieldset class="grupo">
+        <div class="campo">
+            <label>Alguém te indicou a fazer essa eletiva? Se sim, marque as indicações que recebeu: </label><br><br>
+
+            <input type="checkbox" id="indicacao1" name="indicacao1" value="amigo">
+            <label for="indicacao1">Amigos que fizeram a eletiva</label>
+
+            <input type="checkbox" id="indicacao2" name="indicacao2" value="professores">
+            <label for="indicacao2">Recomendação de professores</label>
+
+            <input type="checkbox" id="indicacao3" name="indicacao3" value="ninguem">
+            <label for="indicacao3">Ninguém me indicou</label>
+
+            
+        </div>
+    </fieldset>
+
+
+        <div class="campo">
+            <br>
+            <label>Por que você quer participar dessa eletiva?</label>
+            <textarea rows="6" style="width: 40m" id="participacao" name="participacao"></textarea>
+        </div>
+        <div class="campo">
+            <label>O que mais te fez se interessar por essa eletiva?</label>
+            <textarea rows="6" style="width: 26m" id="participacao" name="participacao"></textarea>
+        </div>
+        <div class="campo">
+            <label>Temos várias opções de eletivas que são igualmente interessantes, o que mais te chamou a atenção para tomar sua decisão? </label>
+            <textarea rows="6" style="width: 26m" id="participacao" name="participacao"></textarea>
+        </div>
+        <div class="campo">
+            <label>Escreva um pequeno texto explicando porque deveríamos priorizar a sua candidatura nesta eletiva: </label>
+            <textarea rows="6" style="width: 26m" id="participacao" name="participacao"></textarea>
+        </div>
+            <button class="botao" type="submit">Enviar</button>
+
+   
+    
     </form>
 </body>
 </html>

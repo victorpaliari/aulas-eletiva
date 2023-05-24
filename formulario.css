@@ -3,7 +3,7 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Sarala&family=Syne+Mono&family=VT323&display=swap');
 
-
+/* Elementos que inteferem no documento inteiro através do atalho * que significa "tudo" */
  * {
     display: flex;
     background-color: blueviolet;
@@ -14,7 +14,13 @@
     padding: 0;
 }
 
+/* Elementos que interferem só no corpo do documento através da tag <body> */
+body {
+    font-size: 25px;
+    margin: 10%;
+} 
 
+/* Elementos do id="título" */
 #titulo {
     display: flex;
     background-color:yellow;
@@ -26,6 +32,7 @@
     
 }
 
+/* Elementos do id="subtítulo" */
 #subtitulo {
     display: flex;
     background-color: blueviolet; 
@@ -33,20 +40,34 @@
     text-align: center;
 }
 
+/* Elementos da tag <fieldset> */
 fieldset {
     border: 0;
 }
 
- body {
-    font-size: 25px;
-    margin: 10%;
-} 
+/* Elementos da class="campo" */
+.campo {
+    margin-bottom: 1em;
+}
+
+/* Elementos da class="serie" (Estava com dificuldades de atribuir características pra essa tag chamando ".campo" - não entendi porquê - então criei essa para teste. */
+
+.serie {
+    margin-left: 5%;
+}
 
 
 .botao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     font-size: 30px;
     background-color: rgb(47, 244, 47);
-    border-radius: 2px;
+    border-radius: 5px;
+    width: 30%;
+    height: 70px;
+    
 }
 
 .botao:hover {
@@ -59,40 +80,31 @@ fieldset {
     cursor: pointer;
 }
 
+.botao-centralizado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 input, select, textarea, button {
     border-radius: 5px;
     font-size: 1em;
     border-radius: 5px;
 }
 
-.campo {
-    margin-bottom: 1em;
-}
-
-.campo-serie {
-    margin-left: 5%;
-}
-
-fieldset .grupo .campo {
+/*  Elementos da classe class="campo" e class="grupo" das tags <fieldset> e <div> */
+.campo .grupo fieldset {
     float:  left;
     margin-right: 1em;
     
 }
 
-/* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
+/* Elementos de classe class="campo", das tags <input> com atributo text + email, da tag <select> e da tag <textarea> */
 .campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
     padding: 0.2em;
     border: 2px solid #000000;
     box-shadow: 5px 5px 2px rgba(0,0,0,0.2);
     display: block;
 }
-
-.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
-    padding: 0.2em;
-    border: 2px solid #000000;
-    box-shadow: 5px 5px 2px rgba(0,0,0,0.2);
-    display: block;
-}
-
 
 

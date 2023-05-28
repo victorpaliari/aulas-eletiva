@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Sarala&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+.cabecalho2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.cabecalho-itens {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 13px;
+    color: #FFF2E7;
+}
+
+body {
+    background: linear-gradient(68.15deg, #5E99CE 16.62%, #291DB4 85.61%);
+}
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 64px;
+    color: #FFF2E7;
+}
+
+h2 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFF2E7;
+}
+
+
+
+
